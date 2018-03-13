@@ -150,6 +150,7 @@
     width: 16px;
     height: 16px;
     margin-right: 10px;
+    background-size: contain;
 }
 
 .syproject li .projectInfo .p2 span {
@@ -208,10 +209,11 @@
 
 .foundationNews li .span1 {
     display: inline-block;
-    border-top: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #AC261A;
-    border-left: 20px solid transparent;
+    margin-top: 20px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #AC261A;
+    border-left: 10px solid transparent;
 }
 
 .foundationNews li .span2 {
