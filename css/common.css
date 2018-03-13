@@ -216,11 +216,11 @@ html {
 }
 
 .selLi {
-    background: #9D3224;
+    background: #9D3224 !important;
 }
 
 .selA {
-    color: #fff
+    color: #fff !important;
 }
 
 .footer .links {
