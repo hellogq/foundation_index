@@ -11,8 +11,8 @@
     <meta name="keywords" content="网站关键字" />
     <meta name="description" content="网站描述" />
     <!-- <link rel="Shortcut Icon" href="网站.ico图标路径" /> -->
-    <link type="text/css" rel="stylesheet" href="./common/css/common.css" />
-    <link type="text/css" rel="stylesheet" href="./index.css">
+    <link type="text/css" rel="stylesheet" href="common/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="index/index.css">
     <!-- <script type="text/javascript" src="JS文件路径"></script> -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/slide.js"></script>
@@ -30,16 +30,6 @@
             });
             $("#header").load("./common/header.html")
             $("#footer").load("./common/footer.html")
-            $('.navParent>li').on("mouseenter", function() {
-                $(this).addClass('.selLi')
-                $(this).children("a").addClass('.selA')
-                $(this).children(".navChildren").show()
-            })
-            $('.navParent>li').on("mouseleave", function() {
-                $(this).removeClass('.selLi')
-                $(this).children("a").removeClass('.selA')
-                $(this).children(".navChildren").hide()
-            })
         });
     </script>
 </head>
