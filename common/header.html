@@ -1,6 +1,6 @@
 <div class="header clearfix">
     <div class="logo fl">
-        <img src="./img/logo.png" alt="logo">
+        <!-- <img src="./img/logo.png" alt="logo"> -->
     </div>
     <div class="login fr">善源公益平台登录</div>
 
@@ -52,8 +52,10 @@
     </ul>
 </div>
 <script>
-    $('.navParent>li').on("click", function() {
-        $(this).toggleClass('selLi')
-        $(this).children("a").toggleClass('selA')
+    $('.navParent>li').on('click', function() {
+        $(this).addClass('selLi').siblings().removeClass('selLi')
+        $(this).children("a").addClass('selA')
+        $(this).siblings().children("a").removeClass('selA')
+
     })
 </script>

@@ -143,7 +143,9 @@ html {
 }
 
 .header .logo {
-    width: 10%;
+    /* width: 10%; */
+    width: 20%;
+    margin-bottom: 20px;
 }
 
 .header .logo img {
@@ -202,7 +204,7 @@ html {
     width: 100%;
 }
 
-.headerNav .navParent>li:hover .headerNav .navChildren {
+.headerNav .navParent>li:hover .navChildren {
     display: block;
 }
 
