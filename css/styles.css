@@ -1,0 +1,275 @@
+img {
+    border: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.slides {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides .logo {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    width: 497px;
+    height: 109px;
+    z-index: 9999;
+}
+
+.slides .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.slideInner {
+    height: 700px;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+}
+
+.slideInner a {
+    display: block;
+    height: 700px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+}
+
+
+/* .slideInner a img {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    width: 497px;
+    height: 109px;
+    z-index: 9999;
+} */
+
+.nav {
+    width: 100%;
+    position: relative;
+}
+
+.nav a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    z-index: 9;
+}
+
+.nav a.prev {
+    position: absolute;
+    left: 100px;
+    top: -350px;
+    margin-top: -58px;
+    background: url(../img/icon1.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav a.next {
+    position: absolute;
+    right: 100px;
+    top: -350px;
+    margin-top: -58px;
+    background: url(../img/icon2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.navListBox {
+    position: absolute;
+    left: 50%;
+    top: 675px;
+    z-index: 99;
+}
+
+.navListBox li {
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin-left: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.navListBox li:first-child {
+    margin-left: 0;
+}
+
+.navListBox li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.navListBox li a.active {
+    background-color: #9D3224;
+}
+
+.content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.syTitle {
+    text-align: center;
+    margin-top: 105px;
+    margin-bottom: 150px;
+}
+
+.syTitle .big {
+    font-size: 48px;
+    color: #4A4A4A;
+    line-height: 48px;
+}
+
+.syTitle .line {
+    width: 322px;
+    height: 2px;
+    background: #9D3224;
+    margin: 10px auto 0;
+}
+
+.syTitle .small {
+    font-size: 20px;
+    color: #4A4A4A;
+    padding-top: 16px;
+    line-height: 28px;
+}
+
+.aboutContent img {
+    width: 35%;
+    /* height: 297px; */
+    display: inline-block;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    vertical-align: middle;
+}
+
+.aboutContent span {
+    width: 60%;
+    display: inline-block;
+    margin-left: 4%;
+    font-size: 20px;
+    color: #4A4A4A;
+    line-height: 40px;
+    text-indent: 2em;
+    text-align: justify;
+    vertical-align: middle;
+}
+
+.syProject ul {
+    overflow: hidden;
+}
+
+.syProject li {
+    float: left;
+    width: 31%;
+    margin-right: 3%;
+    min-height: 468px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 150px;
+}
+
+.syProject li:last-child {
+    margin-right: 0;
+}
+
+.syProject .img {
+    width: 100%;
+    height: 270px;
+}
+
+.syProject .font {
+    padding: 30px;
+}
+
+.syProject .font p {
+    font-size: 18px;
+    color: #4A4A4A;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.footer .links {
+    width: 100%;
+    background: url(../img/footerbg.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 108px;
+}
+
+.footer .links .syTitle {
+    margin-top: 0;
+    margin-bottom: 124px;
+}
+
+.footer .linksLogo {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.footer .linksLogo a {
+    display: inline-block;
+    height: 72px;
+    width: 20%;
+    margin-right: 6%;
+}
+
+.linksLogo .top {
+    margin-bottom: 88px;
+}
+
+.linksLogo .top a:last-child,
+.linksLogo .mid a:last-child {
+    margin-right: 0;
+}
+
+.linksLogo .mid {
+    overflow: hidden;
+    margin-bottom: 190px;
+}
+
+.linksLogo .mid a {
+    float: left;
+    width: 29%;
+    height: 68px;
+}
+
+.linksLogo .mid a img {
+    vertical-align: middle
+}
+
+.footer .bto {
+    width: 100%;
+    padding: 55px 0;
+    background: rgba(133, 24, 15, 0.82);
+}
+
+.footer .bto>div {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.footer .bto .p1 {
+    font-size: 28px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+
+.footer .bto .p2 {
+    font-size: 16px;
+    color: #FFFFFF;
+}

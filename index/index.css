@@ -1,0 +1,240 @@
+.slides {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides .logo {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    width: 497px;
+    height: 109px;
+    z-index: 9999;
+}
+
+.slides .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.slideInner {
+    height: 700px;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+}
+
+.slideInner a {
+    display: block;
+    height: 700px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
+    position: relative;
+}
+
+.nav a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    z-index: 9;
+}
+
+.nav a.prev {
+    position: absolute;
+    left: 100px;
+    top: -350px;
+    margin-top: -58px;
+    background: url(../img/icon1.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav a.next {
+    position: absolute;
+    right: 100px;
+    top: -350px;
+    margin-top: -58px;
+    background: url(../img/icon2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.navListBox {
+    position: absolute;
+    left: 50%;
+    top: 675px;
+    z-index: 99;
+}
+
+.navListBox li {
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin-left: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.navListBox li:first-child {
+    margin-left: 0;
+}
+
+.navListBox li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.navListBox li a.active {
+    background-color: #9D3224;
+}
+
+.content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.syproject li {
+    width: 30%;
+    margin-right: 5%;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16);
+}
+
+.syproject li:last-child {
+    margin-right: 0;
+}
+
+.syproject li .img {
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    border-bottom: 5px solid #fff;
+    position: relative;
+}
+
+.syproject li .img .mark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background: transparent;
+}
+
+.syproject li .img img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-out;
+}
+
+.syproject li .projectInfo {
+    padding: 31px 22px;
+    box-sizing: border-box;
+    transition: all 0.5s ease-out;
+}
+
+.syproject li .projectInfo .p1 {
+    font-size: 30px;
+    color: #4F5053;
+    line-height: 42px;
+}
+
+.syproject li .projectInfo .p2 {
+    font-size: 22px;
+    color: #9D3224;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.syproject li .projectInfo .p2 .icon {
+    background: url(../img/index/icon-dg.png) no-repeat center;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+.syproject li .projectInfo .p2 span {
+    vertical-align: middle;
+}
+
+.syproject li .projectInfo .p3 {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    color: #fff;
+    background: #9D3224;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 58px;
+}
+
+.syproject li:hover img {
+    transform: scale(1.2);
+}
+
+.syproject li:hover .img .mark {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.syproject li:hover .projectInfo {
+    background: #9D3224;
+    color: #fff;
+}
+
+.syproject li:hover .projectInfo p {
+    color: #fff;
+}
+
+.syproject li:hover .projectInfo .p3 {
+    background: #fff;
+    color: #9D3224;
+}
+
+.foundationNews {
+    margin-top: 200px;
+}
+
+.foundationNews li {
+    border-bottom: 1px solid rgba(218, 222, 228, 0.60);
+}
+
+.foundationNews li a {
+    line-height: 90px;
+}
+
+.foundationNews li span {
+    vertical-align: middle
+}
+
+.foundationNews li .span1 {
+    display: inline-block;
+    padding-top: 20px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #AC261A;
+    border-left: 20px solid transparent;
+}
+
+.foundationNews li .span2 {
+    font-size: 24px;
+    color: #666A7F;
+    padding-left: 90px;
+}
+
+.foundationNews li .span3 {
+    font-size: 18px;
+    color: #9B9B9B;
+}

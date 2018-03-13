@@ -1,0 +1,149 @@
+<link type="text/css" rel="stylesheet" href="../common/css/common.css" />
+<div class="header clearfix">
+    <div class="logo fl">
+        <img src="../img/index/logo.png" alt="logo">
+    </div>
+    <div class="login fr">善源公益平台登录</div>
+
+</div>
+<div class="nav">
+    <ul class="navParent">
+        <li class="selLi">
+            <a href="/" target="_blank" class="selA">首页</a>
+        </li>
+        <li>
+            <a href="aboutus.html" target="_blank">关于我们</a>
+            <ul class="navChildren">
+                <li>
+                    <a href="#" target="_blank">基金会简介</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">组织结构</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">信息公式</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="syproject.html" target="_blank">善源项目</a>
+            <ul class="navChildren">
+                <li>
+                    <a href="#" target="_blank">善源项目</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">一起善源</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="foundationnews.html" target="_blank">公益资讯</a>
+        </li>
+        <li>
+            <a href="joinus.html" target="_blank">加入我们</a>
+            <ul class="navChildren">
+                <li>
+                    <a href="#" target="_blank">合作伙伴</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">成为志愿者</a>
+                </li>
+
+            </ul>
+        </li>
+    </ul>
+</div>
+<style>
+    .header {
+        width: 85%;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .header .logo {
+        width: 10%;
+    }
+    
+    .header .logo img {
+        width: 100%;
+    }
+    
+    .header .login {
+        width: 10%;
+        border: 1px solid #9D3224;
+        border-radius: 6px;
+        font-size: 14px;
+        color: #9D3224;
+        text-align: center;
+        padding: 9px 14px;
+        background: #fff;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .header .login:hover {
+        background: #9D3224;
+        color: #fff;
+    }
+    
+    .nav {
+        width: 65%;
+        margin: 0 auto;
+        height: 108px;
+    }
+    
+    .nav .navParent>li {
+        float: left;
+        width: 20%;
+        height: 100%;
+        background: #fff;
+        text-align: center;
+    }
+    
+    .nav .navParent>li>a {
+        color: #9D3224;
+        font-size: 20px;
+        line-height: 108px;
+    }
+    
+    .nav .navChildren {
+        display: none;
+        background: rgba(0, 0, 0, 0.70);
+    }
+    
+    .nav .navChildren li {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+    }
+    
+    .nav .navChildren li a {
+        color: #fff;
+        font-size: 18px;
+        line-height: 80px;
+    }
+    
+    .selLi {
+        background: #9D3224;
+    }
+    
+    .selA {
+        color: #fff
+    }
+</style>
+<script src="../js/jquery.min.js"></script>
+<script>
+    $('.navParent>li').on("mouseenter", function() {
+        $(this).addClass('.selLi')
+        $(this).children("a").addClass('.selA')
+        $(this).children(".navChildren").show()
+    })
+    $('.navParent>li').on("mouseleave", function() {
+        $(this).removeClass('.selLi')
+        $(this).children("a").removeClass('.selA')
+        $(this).children(".navChildren").hide()
+    })
+</script>
