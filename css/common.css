@@ -119,14 +119,13 @@ html {
 }
 
 .title {
-    padding-top: 66px;
-    margin-bottom: 90px;
+    padding: 90px 0;
 }
 
 .title .p1 {
     text-align: center;
     color: #9D3224;
-    font-size: 34px;
+    font-size: 26px;
 }
 
 .title .p2 {
@@ -175,7 +174,7 @@ html {
 .headerNav {
     width: 65%;
     margin: 0 auto;
-    height: 108px;
+    height: 68px;
 }
 
 .headerNav .navParent>li {
@@ -190,7 +189,7 @@ html {
 .headerNav .navParent>li>a {
     color: #9D3224;
     font-size: 20px;
-    line-height: 108px;
+    line-height: 68px;
 }
 
 .headerNav .navChildren {
@@ -198,21 +197,21 @@ html {
     background: rgba(0, 0, 0, 0.70);
     z-index: 222;
     position: absolute;
-    top: 108px;
+    top: 68px;
     left: 0;
     width: 100%;
 }
 
 .headerNav .navChildren li {
     width: 100%;
-    height: 80px;
+    height: 68px;
     text-align: center;
 }
 
 .headerNav .navChildren li a {
     color: #fff;
     font-size: 18px;
-    line-height: 80px;
+    line-height: 68px;
 }
 
 .selLi {
@@ -241,7 +240,7 @@ html {
 
 .footer .linksLogo a {
     display: inline-block;
-    height: 72px;
+    height: 55px;
     width: 20%;
     margin-right: 6%;
 }
@@ -263,7 +262,7 @@ html {
 .linksLogo .mid a {
     float: left;
     width: 29%;
-    height: 68px;
+    height: 55px;
 }
 
 .linksLogo .mid a img {
