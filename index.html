@@ -11,11 +11,11 @@
     <meta name="keywords" content="网站关键字" />
     <meta name="description" content="网站描述" />
     <!-- <link rel="Shortcut Icon" href="网站.ico图标路径" /> -->
-    <link type="text/css" rel="stylesheet" href="common/css/common.css" />
-    <link type="text/css" rel="stylesheet" href="index/index.css">
-    <!-- <script type="text/javascript" src="JS文件路径"></script> -->
+    <link type="text/css" rel="stylesheet" href="./css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./index.css">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/slide.js"></script>
+    <script type="text/javascript" src="./js/header.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $(".slideInner").slide({
@@ -28,9 +28,9 @@
                 prevBtn: $('a.prev'),
                 nextBtn: $('a.next')
             });
-            $("#header").load("./common/header.html")
-            $("#footer").load("./common/footer.html")
         });
+        $("#header").load("./common/header.html")
+        $("#footer").load("./common/footer.html")
     </script>
 </head>
 
