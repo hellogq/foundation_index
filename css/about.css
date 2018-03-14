@@ -1,0 +1,69 @@
+.content {
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid #9D3224;
+    box-sizing: border-box;
+    padding: 30px 60px;
+}
+
+.muen {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.muen li {
+    float: left;
+    width: 20%;
+    height: 65px;
+    line-height: 65px;
+    margin-right: 20px;
+    text-align: center;
+    background: #E2E1DB;
+    font-size: 20px;
+    color: #4F5053;
+    position: relative;
+}
+
+.muen li:first-child {
+    margin-left: 17%;
+}
+
+.muen li span {
+    border-top: 20px solid #915C3A;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.muen li:hover {
+    background: #915C3A;
+    color: #fff;
+    cursor: pointer;
+}
+
+.muen li:hover span {
+    display: block;
+}
+
+.content .container {
+    margin-top: 40px;
+}
+
+.content .container .p1 {
+    font-size: 16px;
+    color: #666A7F;
+    line-height: 26px;
+}
+
+.content .container .p2 {
+    font-size: 14px;
+    color: #9B9B9B;
+    line-height: 24px;
+    text-indent: 2em;
+    word-break: break-all;
+}
