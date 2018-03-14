@@ -1,6 +1,6 @@
 .content {
     width: 85%;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     border: 1px solid #9D3224;
     box-sizing: border-box;
     padding: 30px 60px;
@@ -69,6 +69,6 @@
 }
 
 .msel {
-    background: #915C3A;
-    color: #fff;
+    background: #915C3A !important;
+    color: #fff !important;
 }

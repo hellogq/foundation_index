@@ -1,6 +1,6 @@
 <div class="header clearfix">
     <div class="logo fl">
-        <img src="img/logo.png" alt="logo">
+        <img src="https://hellogq.github.io/img/logo.png" alt="logo">
     </div>
     <div class="login fr">善源公益平台登录</div>
 
@@ -14,13 +14,13 @@
             <a href="javascript:;" target="_Self">关于我们</a>
             <ul class="navChildren">
                 <li>
-                    <a href="about/index.html?tab=1&index=1" target="_blank">基金会简介</a>
+                    <a href="https://hellogq.github.io/about/index.html?tab=1&index=1" target="_blank">基金会简介</a>
                 </li>
                 <li>
-                    <a href="about/index.html?tab=1&index=2" target="_blank">组织结构</a>
+                    <a href="https://hellogq.github.io/about/index.html?tab=1&index=2" target="_blank">组织结构</a>
                 </li>
                 <li>
-                    <a href="about/index.html?tab=1&index=3" target="_blank">信息公式</a>
+                    <a href="https://hellogq.github.io/about/index.html?tab=1&index=3" target="_blank">信息公式</a>
                 </li>
             </ul>
         </li>
@@ -28,24 +28,24 @@
             <a href="javascript:;" target="_Self">善源项目</a>
             <ul class="navChildren">
                 <li>
-                    <a href="./syproject/index.html" target="_blank">善源项目</a>
+                    <a href="https://hellogq.github.io/syproject/index.html?tab=2&index=1" target="_blank">善源项目</a>
                 </li>
                 <li>
-                    <a href="./syproject/index.html" target="_blank">一起善源</a>
+                    <a href="https://hellogq.github.io/syproject/index.html?tab=2&index=2" target="_blank">一起善源</a>
                 </li>
             </ul>
         </li>
         <li>
-            <a href="./foundationnews/index.html" target="_Self">公益资讯</a>
+            <a href="https://hellogq.github.io/foundationnews/index.html" target="_Self">公益资讯</a>
         </li>
         <li>
             <a href="javascript:;" target="_Self">加入我们</a>
             <ul class="navChildren">
                 <li>
-                    <a href="./joinus/index.html" target="_blank">合作伙伴</a>
+                    <a href="https://hellogq.github.io/joinus/index.html?tab=4&index=1" target="_blank">合作伙伴</a>
                 </li>
                 <li>
-                    <a href="./joinus/index.html" target="_blank">成为志愿者</a>
+                    <a href="https://hellogq.github.io/joinus/index.html?tab=4&index=2" target="_blank">成为志愿者</a>
                 </li>
             </ul>
         </li>
@@ -61,11 +61,11 @@
     var tab = getUrlParam("tab")
     var index = getUrlParam("index") - 1
 
-    $('.navParent>li').on('click', function() {
-        $(this).addClass('selLi').siblings().removeClass('selLi')
-        $(this).children("a").addClass('selA')
-        $(this).siblings().children("a").removeClass('selA')
-    })
+    // $('.navParent>li').on('click', function() {
+    //     $(this).addClass('selLi').siblings().removeClass('selLi')
+    //     $(this).children("a").addClass('selA')
+    //     $(this).siblings().children("a").removeClass('selA')
+    // })
 
     $(".navParent>li").eq(tab).addClass('selLi').siblings().removeClass('selLi')
     $(".navParent>li").eq(tab).children("a").addClass('selA')
