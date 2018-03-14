@@ -36,7 +36,7 @@
             </ul>
         </li>
         <li>
-            <a href="https://hellogq.github.io/foundationnews/index.html" target="_Self">公益资讯</a>
+            <a href="https://hellogq.github.io/foundationnews/index.html?tab=3" target="_Self">公益资讯</a>
         </li>
         <li>
             <a href="javascript:;" target="_Self">加入我们</a>
@@ -60,6 +60,9 @@
     }
     var tab = getUrlParam("tab")
     var index = getUrlParam("index") - 1
+    if (!index) {
+        index = 0
+    }
 
     $(".navParent>li").eq(tab).addClass('selLi').siblings().removeClass('selLi')
     $(".navParent>li").eq(tab).children("a").addClass('selA')
