@@ -30,9 +30,6 @@
             $.ajax({
                 url: './common/header.html',
                 type: 'get',
-                data: {
-                    tab: $('.navParent>li').data('id')
-                },
                 dataType: 'html',
                 async: false,
                 success: function(data) {
