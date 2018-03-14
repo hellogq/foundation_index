@@ -52,12 +52,23 @@
     </ul>
 </div>
 <script>
-    var tabIndex = window.location
-    console.log(tabIndex)
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg); //匹配目标参数
+        if (r != null) return unescape(r[2]);
+        return null; //返回参数值
+    }
+    var tab = getUrlParam("tab")
+    var index = getUrlParam("index") - 1
+
     $('.navParent>li').on('click', function() {
         $(this).addClass('selLi').siblings().removeClass('selLi')
         $(this).children("a").addClass('selA')
         $(this).siblings().children("a").removeClass('selA')
-
     })
+
+    $(".navParent>li").eq(tab).addClass('selLi').siblings().removeClass('selLi')
+    $(".muen li").eq(index).addClass('msel').siblings().removeClass('msel')
+    $(".muen li").eq(index).find('span').show()
+    $(".muen li").eq(index).siblings().find('span').hide()
 </script>
