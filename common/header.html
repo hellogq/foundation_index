@@ -7,51 +7,53 @@
 </div>
 <div class="headerNav">
     <ul class="navParent">
-        <li class="selLi">
-            <a href="/" target="_blank" class="selA">首页</a>
+        <li class="selLi" data-id="1">
+            <a href="/" target="_Self" class="selA">首页</a>
         </li>
-        <li>
-            <a href="./about/index.html" target="_blank">关于我们</a>
+        <li data-id="2">
+            <a href="javascript:;" target="_Self">关于我们</a>
             <ul class="navChildren">
                 <li>
-                    <a href="#" target="_blank">基金会简介</a>
+                    <a href="./about/index.html" target="_blank" data-id="1">基金会简介</a>
                 </li>
                 <li>
-                    <a href="#" target="_blank">组织结构</a>
+                    <a href="./about/index.html" target="_blank" data-id="2">组织结构</a>
                 </li>
                 <li>
-                    <a href="#" target="_blank">信息公式</a>
+                    <a href="./about/index.html" target="_blank" data-id="3">信息公式</a>
                 </li>
             </ul>
         </li>
-        <li>
-            <a href="syproject.html" target="_blank">善源项目</a>
+        <li data-id="3">
+            <a href="javascript:;" target="_Self">善源项目</a>
             <ul class="navChildren">
                 <li>
-                    <a href="#" target="_blank">善源项目</a>
+                    <a href="./syproject/index.html" target="_blank">善源项目</a>
                 </li>
                 <li>
-                    <a href="#" target="_blank">一起善源</a>
+                    <a href="./syproject/index.html" target="_blank">一起善源</a>
                 </li>
             </ul>
         </li>
-        <li>
-            <a href="foundationnews.html" target="_blank">公益资讯</a>
+        <li data-id="4">
+            <a href="./foundationnews/index.html" target="_Self">公益资讯</a>
         </li>
-        <li>
-            <a href="joinus.html" target="_blank">加入我们</a>
+        <li data-id="5">
+            <a href="javascript:;" target="_Self">加入我们</a>
             <ul class="navChildren">
                 <li>
-                    <a href="#" target="_blank">合作伙伴</a>
+                    <a href="./joinus/index.html" target="_blank">合作伙伴</a>
                 </li>
                 <li>
-                    <a href="#" target="_blank">成为志愿者</a>
+                    <a href="./joinus/index.html" target="_blank">成为志愿者</a>
                 </li>
             </ul>
         </li>
     </ul>
 </div>
 <script>
+    var tabIndex = window.location
+    console.log(tabIndex)
     $('.navParent>li').on('click', function() {
         $(this).addClass('selLi').siblings().removeClass('selLi')
         $(this).children("a").addClass('selA')
