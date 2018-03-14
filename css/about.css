@@ -67,3 +67,8 @@
     text-indent: 2em;
     word-break: break-all;
 }
+
+.msel {
+    background: #915C3A;
+    color: #fff;
+}
