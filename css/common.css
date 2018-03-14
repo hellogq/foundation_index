@@ -182,7 +182,7 @@ html {
     float: left;
     width: 20%;
     height: 100%;
-    background: #fff;
+    background: #9D3224;
     text-align: center;
     position: relative;
 }
@@ -254,7 +254,7 @@ html {
 .footer .linksLogo a {
     display: inline-block;
     height: 55px;
-    width: 20%;
+    width: 19%;
     margin-right: 6%;
 }
 
