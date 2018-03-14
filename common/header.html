@@ -1,6 +1,6 @@
 <div class="header clearfix">
     <div class="logo fl">
-        <img src="./img/logo.png" alt="logo">
+        <img src="img/logo.png" alt="logo">
     </div>
     <div class="login fr">善源公益平台登录</div>
 
@@ -14,13 +14,13 @@
             <a href="javascript:;" target="_Self">关于我们</a>
             <ul class="navChildren">
                 <li>
-                    <a href="./about/index.html?tab=1&index=1" target="_blank">基金会简介</a>
+                    <a href="about/index.html?tab=1&index=1" target="_blank">基金会简介</a>
                 </li>
                 <li>
-                    <a href="./about/index.html?tab=1&index=2" target="_blank">组织结构</a>
+                    <a href="about/index.html?tab=1&index=2" target="_blank">组织结构</a>
                 </li>
                 <li>
-                    <a href="./about/index.html?tab=1&index=3" target="_blank">信息公式</a>
+                    <a href="about/index.html?tab=1&index=3" target="_blank">信息公式</a>
                 </li>
             </ul>
         </li>
@@ -68,6 +68,8 @@
     })
 
     $(".navParent>li").eq(tab).addClass('selLi').siblings().removeClass('selLi')
+    $(".navParent>li").eq(tab).children("a").addClass('selA')
+    $(".navParent>li").eq(tab).siblings().children("a").removeClass('selA')
     $(".muen li").eq(index).addClass('msel').siblings().removeClass('msel')
     $(".muen li").eq(index).find('span').show()
     $(".muen li").eq(index).siblings().find('span').hide()
