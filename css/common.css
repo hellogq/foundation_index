@@ -154,13 +154,11 @@ html {
 
 .header .login {
     width: 10%;
-    border: 1px solid #9D3224;
-    border-radius: 6px;
     font-size: 14px;
-    color: #9D3224;
+    color: #fff;
     text-align: center;
     padding: 9px 14px;
-    background: #fff;
+    background: #9D3224;
     cursor: pointer;
     position: absolute;
     right: 0;
@@ -168,15 +166,16 @@ html {
     transform: translateY(-50%);
 }
 
-.header .login:hover {
-    background: #9D3224;
-    color: #fff;
-}
-
 .headerNav {
-    width: 65%;
+    width: 85%;
     margin: 0 auto;
     height: 68px;
+    background: #9D3224;
+}
+
+.headerNav ul {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .headerNav .navParent>li {
@@ -209,7 +208,7 @@ html {
 }
 
 .headerNav .navParent>li:hover {
-    background: #9D3224 !important;
+    background: #731E13 !important;
 }
 
 .headerNav .navParent>li:hover a {
@@ -229,7 +228,7 @@ html {
 }
 
 .selLi {
-    background: #9D3224 !important;
+    background: #731E13 !important;
 }
 
 .selA {

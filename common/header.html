@@ -7,8 +7,8 @@
 </div>
 <div class="headerNav">
     <ul class="navParent">
-        <li class="selLi">
-            <a href="/" target="_Self" class="selA">首页</a>
+        <li>
+            <a href="/" target="_Self">首页</a>
         </li>
         <li>
             <a href="javascript:;" target="_Self">关于我们</a>
@@ -60,12 +60,6 @@
     }
     var tab = getUrlParam("tab")
     var index = getUrlParam("index") - 1
-
-    // $('.navParent>li').on('click', function() {
-    //     $(this).addClass('selLi').siblings().removeClass('selLi')
-    //     $(this).children("a").addClass('selA')
-    //     $(this).siblings().children("a").removeClass('selA')
-    // })
 
     $(".navParent>li").eq(tab).addClass('selLi').siblings().removeClass('selLi')
     $(".navParent>li").eq(tab).children("a").addClass('selA')

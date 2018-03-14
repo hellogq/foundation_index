@@ -39,8 +39,16 @@
                 <li>组织结构<span></span></li>
             </ul>
         </div>
-        <div class="container">
+        <div class="container" style="display:block;">
             <p class="p1">一 内容标题内容标题</p>
+            <p class="p2">文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容</p>
+        </div>
+        <div class="container">
+            <p class="p1">er 内容标题内容标题</p>
+            <p class="p2">文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容</p>
+        </div>
+        <div class="container">
+            <p class="p1">san 内容标题内容标题</p>
             <p class="p2">文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容文章内容</p>
         </div>
     </div>
@@ -48,3 +56,11 @@
 </body>
 
 </html>
+<script>
+    $(".muen li").click(function() {
+        $(this).addClass('msel').siblings().removeClass('msel')
+        $(this).children('span').show()
+        $(this).siblings().children('span').hide()
+        $(".container").eq($(this).index()).show().siblings(".container").hide()
+    })
+</script>
